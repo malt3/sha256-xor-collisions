@@ -128,7 +128,7 @@ def main():
     if len(sys.argv) == 2:
         inputs = hb.fakeHash(wanted_hash)
     else:
-        previous_hash = bytes.fromhex(sys.argv[2t])
+        previous_hash = bytes.fromhex(sys.argv[2])
         inputs = hb.alterHash(previous_hash, wanted_hash)
 
     print("To get the wanted hash you need to add the following files:")
